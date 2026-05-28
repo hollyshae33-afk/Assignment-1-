@@ -1,1 +1,24 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
+int main()
+{
+    // Variables
+    double payRate = 0.32;
+    int week1Miles = 3250;
+    int week2Miles = 2800;
+    double totalPay;
+
+    // Calculate total earnings
+    totalPay = (week1Miles + week2Miles) * payRate;
+
+    // Format output
+    cout << fixed << setprecision(2);
+
+    // Display result
+    cout << "Darnell's earnings before deductions: $" 
+         << totalPay << endl;
+
+    return 0;
+}
